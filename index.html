@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="module" defer src="script.js"></script>
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="balance-box">
+          <div class="balance-text">
+            <p>My balance</p>
+            <!-- Default hardcore balance,leave as is-->
+            <p class="balance-amount">$921.48</p>
+          </div>
+          <img src="images/logo.svg" alt="circle logo" />
+        </div>
+        <div class="spending-box">
+          <p class="spending-text">Spending - Last 7 days</p>
+          <ul class="graph">
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="mon"></div>
+              <p>mon</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="tue"></div>
+              <p>tue</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data max" id="wed"></div>
+              <p>wed</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="thu"></div>
+              <p>thu</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="fri"></div>
+              <p>fri</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="sat"></div>
+              <p>sat</p>
+            </li>
+            <li class="bar">
+              <span class="popup"></span>
+              <div class="bar-data" id="sun"></div>
+              <p>sun</p>
+            </li>
+          </ul>
+
+          <hr />
+          <div class="data-breakdown">
+            <div class="total-box">
+              <p class="total-text">Total this month</p>
+              <!-- Default hardcore balance, try to use JSON to calculate total balance-->
+              <p id="total-number">$478.33</p>
+            </div>
+
+            <div class="lastmonth-box">
+              <!-- Default lastmonth %,leave as is-->
+              <p class="lastmonth-data">+2.4%</p>
+              <p class="lastmonth-text">from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
